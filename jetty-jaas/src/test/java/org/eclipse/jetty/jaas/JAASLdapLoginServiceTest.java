@@ -59,13 +59,13 @@ import static org.junit.Assert.*;
     "objectClass: top",
     "ou: people",
     // Entry # 2
-    "dn:uid=someone, ou=people,dc=jetty,dc=org",
+    "dn:uid=someone,ou=people,dc=jetty,dc=org",
     "objectClass: inetOrgPerson",
     "cn: someone",
     "sn: sn test",
     "userPassword: complicatedpassword",
     // Entry # 3
-    "dn:uid=someoneelse, ou=people,dc=jetty,dc=org",
+    "dn:uid=someoneelse,ou=people,dc=jetty,dc=org",
     "objectClass: inetOrgPerson",
     "cn: someoneelse",
     "sn: sn test",
@@ -81,7 +81,7 @@ import static org.junit.Assert.*;
     "objectClass: top",
     "ou: groups",
     "description: People who try to build good software",
-    "uniquemember: uid=someone, ou=people, dc=jetty,dc=org",
+    "uniquemember: uid=someone,ou=people,dc=jetty,dc=org",
     "cn: developers",
     // Entry 6
     "dn: cn=admin,ou=groups,dc=jetty,dc=org",
@@ -89,8 +89,8 @@ import static org.junit.Assert.*;
     "objectClass: top",
     "ou: groups",
     "description: People who try to run software build by developers",
-    "uniquemember: uid=someone, ou=people, dc=jetty,dc=org",
-    "uniquemember: uid=someoneelse, ou=people, dc=jetty,dc=org",
+    "uniquemember: uid=someone,ou=people,dc=jetty,dc=org",
+    "uniquemember: uid=someoneelse,ou=people,dc=jetty,dc=org",
     "cn: admin"
 })
 public class JAASLdapLoginServiceTest
